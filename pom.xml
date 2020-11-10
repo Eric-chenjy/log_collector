@@ -61,15 +61,14 @@
     <build>
         <plugins>
             <!-- 如果已经在Maven的全局配置中，配置了JDK编译的界别，这个插件可以省略 -->
-            <!-- <plugin>
+             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>3.1</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
-            </plugin> -->
-
+            </plugin>
             <!-- 在mvn:package阶段使用
                     maven-assembly-plugin可以将当前项目依赖的Jar中的字节码也打包！
                     默认的打包插件maven-jar-plugin，只会将自己写的代码打包，默认仓库中已经安装了所需的依赖！
